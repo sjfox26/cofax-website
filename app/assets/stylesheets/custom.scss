@@ -1,0 +1,94 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+/* VARIABLES AND MIXINS */
+
+$light-gray: #777;
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+/* GLOBAL STYLES */
+html, body {
+  padding-top: 60px;
+  font-family: "AvenirNext",Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  //height: 100vh;     //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap, I switched to vh from %
+}
+
+
+
+/* HEADER STYLES */
+
+#cofax-logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 2.8em;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: normal;
+  //letter-spacing: -1px;
+  padding-top: 14px;
+  letter-spacing: 1.5px;
+  // font-weight: bold;
+
+  /* & is reference to parent logo. this is nested writing per 5.2.2 of Ruby on Rails Tutorial */
+  &:hover {
+    color: #e82e30;
+    text-decoration: none;
+  }
+}
+
+#navbar_container{
+  background-color: #f8f8f8;
+}
+
+#phone_number_header{
+  background-color: white;
+  display: flex;
+}
+#phone_icon img{
+  width: 16px;
+  height: 16px;
+  padding-right: 2px;
+}
+
+// https://stackoverflow.com/questions/19844561/bootstrap-3-vertically-center-navigation-links-when-logo-increasing-the-height
+//can't flexbox this I don't think because by default from the bootstrap sass gem, it's a float
+.navbar-default a {
+  line-height: 35px;
+}
+
+// https://stackoverflow.com/questions/18777235/center-content-in-responsive-bootstrap-navbar
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  height: 4em;
+  padding-top: .5em;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  height: 12em;
+}
+
+#menuContent{
+  font-size: 1.1em;
+
+}
+
+.navbar-inverse .navbar-nav > li > a{
+  color: black;
+  font-size: 1.2em;
+}
+
+.dropdown-menu{
+  text-align: center;
+  font-size: 1.0em;
+}
