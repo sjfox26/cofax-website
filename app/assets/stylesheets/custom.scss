@@ -20,7 +20,9 @@ html, body {
   //height: 100vh;     //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap, I switched to vh from %
 }
 
-
+.center {
+  text-align: center;
+}
 
 /* HEADER STYLES */
 
@@ -91,4 +93,20 @@ html, body {
 .dropdown-menu{
   text-align: center;
   font-size: 1.0em;
+}
+
+
+
+/* HOME STYLES */
+.page_container{
+  margin-top: 0px;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: auto; //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap
+  padding-bottom: 20px; /* ???> this needs to be bigger than footer height   https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap*/
+}
+
+.container_for_background{
+  background-color: #e4858d;
+  padding: 40px 0;
 }
