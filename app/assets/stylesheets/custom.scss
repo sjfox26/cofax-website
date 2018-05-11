@@ -26,6 +26,10 @@ html, body {
 
 /* HEADER STYLES */
 
+header {
+  margin-bottom: -50px;
+}
+
 #cofax-logo {
   float: left;
   margin-right: 10px;
@@ -95,11 +99,22 @@ html, body {
   font-size: 1.0em;
 }
 
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+
+/*SITE CONTENT */
+
+#site_content{
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 85vh;
+}
 
 
 /* HOME STYLES */
 .page_container{
-  margin-top: 0px;
+  margin-top: 0;
   padding-left: 0;
   padding-right: 0;
   overflow: auto; //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap
@@ -141,4 +156,32 @@ html, body {
 .services-list li {
   padding: 5px;
   font-size: 1.1em;
+}
+
+/* FOOTER STYLES */
+
+.footer {
+  padding: 10px 0 20px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: #000000;
+  margin-right: 10px;
+}
+
+footer a:hover {
+  color: #ff090c;
+}
+
+footer ul {
+  //float: right;
+  list-style: none;
+  margin-left: -18px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-left: 18px;
 }
