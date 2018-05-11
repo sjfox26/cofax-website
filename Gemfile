@@ -37,6 +37,11 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
+gem 'gmaps4rails', '~> 2.1', '>= 2.1.2'
+
+# https://stackoverflow.com/questions/17283622/uncaught-referenceerror-is-not-defined-from-restangular
+gem 'underscore-rails', '~> 1.8', '>= 1.8.3'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

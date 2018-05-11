@@ -4,16 +4,62 @@
     <div class="content_container container-fluid">
 
       <div class="row">
-        <div class="serving-chicago-container col-md-6 col-md-offset-3 center">
-          <h3 class="center">SERVING CHICAGOLAND SINCE 1986</h3>
-          <br/>
-          <p>Tom Fox has been installing wallpaper and painting in the Chicagoland area since 1986.  He is a graduate of the American School of Paper Hanging Arts in Commerce, Georgia.</p>
-          <p>Because of his continuous work in wallcovering through the years, even as wallpaper declined as a trend around 2000, Tom is currently one of the most experienced and qualified paper-hangers in the Chicago suburbs.</p>
-          <p>In recent years, as wallpaper has come back into favor as an interior design choice, Tom has used his expertise to complete many unique and first-class wallcovering projects.</p>
-          <p>Over the years, Tom has earned a reputation for first-class work, friendly service, and a great overall wallpaper-installation experience.</p>
+        <div class="serving-chicago-container col-md-12">
+          <div class="col-md-6 col-md-offset-3">
+            <h3 class="center">SERVING CHICAGOLAND SINCE 1986</h3>
+            <br/>
+            <p>Tom Fox has been installing wallpaper and painting in the Chicagoland area since 1986.  He is a graduate of the American School of Paper Hanging Arts in Commerce, Georgia.</p>
+            <p>Because of his continuous work in wallcovering through the years, even as wallpaper declined as a trend around 2000, Tom is currently one of the most experienced and qualified paper-hangers in the Chicago suburbs.</p>
+            <p>In recent years, as wallpaper has come back into favor as an interior design choice, Tom has used his expertise to complete many unique and first-class wallcovering projects.</p>
+            <p>Over the years, Tom has earned a reputation for first-class work, friendly service, and a great overall wallpaper-installation experience.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="map-container col-md-12 center">
+          <div class="col-md-6 col-md-offset-3">
+            <h3>LOCATION</h3>
+            <div class="location">
+              <div style='max-width: 100%;'>
+                <div id="map" style='width: 100%; height: 250px;'></div>
+              </div>
+              Serving Downers Grove, Naperville, Lisle, Glen Ellyn, Woodridge, Oak Brook, Burr Ridge, Aurora, and the
+              rest of the Chicagoland area.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="services_container col-12">
+          <div id="services">
+            <h3>Services</h3>
+            <ul class="services-list">
+              <li>Free Estimates</li>
+              <li>Wallpaper Installation</li>
+              <li>Painting (with wallpaper projects)</li>
+              <li>Clean Work</li>
+              <li>Friendly Service</li>
+              <li>Great Communication</li>
+              <li>Years of Expertise</li>
+            </ul>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
 </div>
+
+
+<%#https://stackoverflow.com/questions/19918942/gmaps4rails-v2-change-default-zoom%>
+<script type="text/javascript">
+    handler = Gmaps.build('Google');
+    handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+        circle = handler.addCircles(<%=raw @circle.to_json %>);
+        handler.bounds.extendWith(circle);
+        handler.fitMapToBounds();
+        handler.getMap().setZoom(8);
+    });
+</script>

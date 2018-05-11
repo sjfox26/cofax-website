@@ -29,7 +29,7 @@ html, body {
 #cofax-logo {
   float: left;
   margin-right: 10px;
-  font-size: 2.8em;
+  font-size: 2.4em;
   color: #000000;
   text-transform: uppercase;
   font-weight: normal;
@@ -108,5 +108,37 @@ html, body {
 
 .container_for_background{
   background-color: #e4858d;
+  //padding: 40px 0;
+}
+
+.serving-chicago-container {
+  background-color: aquamarine;
   padding: 40px 0;
+}
+
+.map-container {
+  background-color: #DADADA;
+  padding: 40px 0;
+}
+
+/* SERVICES STYLES */
+
+.services_container{
+  margin-top: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.services_container ul{
+  list-style-type: none;
+}
+
+.services-list {
+  padding: 30px;
+}
+
+.services-list li {
+  padding: 5px;
+  font-size: 1.1em;
 }
