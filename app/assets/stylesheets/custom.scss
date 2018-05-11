@@ -45,10 +45,13 @@ header {
 
   /* & is reference to parent logo. this is nested writing per 5.2.2 of Ruby on Rails Tutorial */
   &:hover {
-    color: #e82e30;
+    color: #ff090c;
     text-decoration: none;
   }
 }
+
+//https://stackoverflow.com/questions/16625972/change-color-of-bootstrap-navbar-on-hover-link ..... "the !important in necessary in this case"
+ul.nav a:hover { color: #ff090c !important; }
 
 #navbar_container{
   background-color: #f8f8f8;
@@ -130,10 +133,12 @@ header {
 .serving-chicago-container {
   background-color: #fefefe;
   padding: 40px 0;
+  font-size: 1.1em;
+  line-height: 1.6em;
 }
 
 .map-container {
-  background-color: #d8d8d8;
+  background-color: #ececec;
   padding: 40px 0;
 }
 
@@ -178,15 +183,44 @@ footer a {
 
 footer a:hover {
   color: #ff090c;
+  text-decoration: none;
 }
 
 footer ul {
   //float: right;
   list-style: none;
-  margin-left: -18px;
+  margin-left: -42px;
 }
 
 footer ul li {
   display: inline-block;
   margin-left: 18px;
 }
+
+/* CONTACT STYLES */
+.hidden {
+  display: none;
+}
+
+.contact_us_container {
+  margin-top: 13vh;
+  margin-bottom: 18vh;
+}
+
+/*ABOUT US PAGE */
+.about-cofax-page {
+  margin-top: 11vh;
+}
+
+.about-services-container {
+  margin-top: 5vh;
+  margin-left: -2vw;
+  margin-bottom: 18vh;
+}
+
+.about-services-list li {
+  list-style: none;
+  margin-left: -40px;
+  padding-top: 2px;
+}
+

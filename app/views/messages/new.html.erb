@@ -1,0 +1,44 @@
+<div id="wrap">
+  <div class="page_container">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="contact_us_container col-md-8 col-md-offset-2">
+
+          <h1 class="center"> Contact Cofax Copiers</h1>
+
+          <p class="center"> Leave your number (with an optional message) and we will be in touch with you soon!</p><br/>
+
+          <%= form_for @message, url: contact_path, method: :post do |f| %>
+
+              <%= f.label :name, "Name:" %>
+              <%= f.text_field :name, class: 'form-control' %>
+
+              <%= f.label :email, "Email:" %>
+              <%= f.email_field :email, class: 'form-control' %>
+
+              <%= f.label :phone_number, "Contact Phone:" %>
+              <%= f.text_field :phone_number, class: 'form-control' %>
+
+              <%= f.label :body, "Optional Message:" %>
+              <%= f.text_field :body, class: 'form-control' %>
+
+              <div class="hidden">
+                <%= f.label :nickname %>
+                <%= f.text_field :nickname, hint: 'leave blank, for spam control', class: 'form-control' %>
+              </div>
+
+              <br/>
+
+              <%= submit_tag("Contact Us", class: "btn btn-primary col-md-12") %>
+
+          <% end %>
+          <br/>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
