@@ -18,6 +18,7 @@ html, body {
   padding-top: 60px;
   font-family: "AvenirNext",Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
   //height: 100vh;     //https://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap, I switched to vh from %
+  font-size: 0.95em;
 }
 
 .center {
@@ -122,27 +123,30 @@ header {
 }
 
 .container_for_background{
-  background-color: #e4858d;
+  background-color: #f6f6f6;
   //padding: 40px 0;
 }
 
 .serving-chicago-container {
-  background-color: aquamarine;
+  background-color: #fefefe;
   padding: 40px 0;
 }
 
 .map-container {
-  background-color: #DADADA;
+  background-color: #d8d8d8;
   padding: 40px 0;
+}
+
+.location {
+  padding-top: 5px;
 }
 
 /* SERVICES STYLES */
 
 .services_container{
-  margin-top: 30px;
-  padding-bottom: 40px;
+  margin-top: 10px;
+  padding: 20px 0;
   text-align: center;
-  font-size: 1.1em;
 }
 
 .services_container ul{
@@ -164,6 +168,7 @@ header {
   padding: 10px 0 20px;
   font-size: 1.5em;
   text-transform: uppercase;
+  background-color: #ffffff;
 }
 
 footer a {
