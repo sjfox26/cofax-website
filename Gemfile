@@ -44,6 +44,10 @@ gem 'underscore-rails', '~> 1.8', '>= 1.8.3'
 
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+
+gem 'sendgrid', '~> 1.2', '>= 1.2.4'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
