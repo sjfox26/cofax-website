@@ -17,3 +17,17 @@
 /yarn-error.log
 
 .byebug_history
+
+#Ignore application specific and confidential info
+/config/application.yml
+
+# https://relishapp.com/rspec/rspec-core/docs/command-line/only-failures
+/spec/examples.txt
+
+# reduce size by excluding images
+/public/system/gallery
+
+.idea/
+
+#Ignoring images so they don't get pushed up to github
+/app/assets/images
